@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Piedra&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
@@ -271,7 +272,7 @@
 
 
         <section id="Services">
-            <div class="container sectionTitle">
+            <div class="container section-title">
                 <h2>Services</h2>
                 <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
             </div>
@@ -359,8 +360,8 @@
 
         </section>
 
-        <section id="appointment">
-            <div class="sectionTitle align-items-center">
+        <section id="appointment" class="appointment">
+            <div class="section-title align-items-center">
                 <h2 class="text-center">Appointment</h2>
                 <p class="text-center">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
             </div>
@@ -419,101 +420,239 @@
 
         </section>
 
-        <section id="Departments">
-            <div class="sectionTitle align-items-center">
+        <section id="Departments" class="departments">
+            <div class="section-title align-items-center">
                 <h2 class="text-center">Departments</h2>
                 <p class="text-center">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
             </div>
 
-            <div class="row">
+            <div class="container">
 
-                <div class="col-lg-3">
-                    <ul class="nav nav-tabs flex-column" role="tablist">
-                      <li class="nav-item" role="presentation">
-                        <a class="nav-link show" data-bs-toggle="tab" href="#departments-tab-1" aria-selected="false" role="tab" tabindex="-1">Cardiology</a>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2" aria-selected="false" role="tab" tabindex="-1">Neurology</a>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3" aria-selected="false" role="tab" tabindex="-1">Hepatology</a>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4" aria-selected="false" tabindex="-1" role="tab">Pediatrics</a>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <a class="nav-link active" data-bs-toggle="tab" href="#departments-tab-5" aria-selected="true" role="tab">Eye Care</a>
-                      </li>
-                    </ul>
-                  </div>
-            </div>
+                <div class="row">
 
-            <div>
-                <div>
+                    <div class="col-lg-3  ">
+
+                        
+                        <ul class="nav nav-tabs flex-column border-0" role="tablist">
+                            <li class="nav-item" role="presentation">
+                            <a class="nav-link show" data-bs-toggle="tab" href="#departments-tab-1" aria-selected="false" role="tab" tabindex="-1">Cardiology</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-2" aria-selected="false" role="tab" tabindex="-1">Neurology</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-3" aria-selected="false" role="tab" tabindex="-1">Hepatology</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab" href="#departments-tab-4" aria-selected="false" tabindex="-1" role="tab">Pediatrics</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#departments-tab-5" aria-selected="true" role="tab">Eye Care</a>
+                            </li>
+                        </ul>
+                    </div>  
+                
                     <div class="col-lg-9 mt-4 mt-lg-0">
                         <div class="tab-content">
-                          <div class="tab-pane" id="departments-tab-1" role="tabpanel">
+                            <div class="tab-pane" id="departments-tab-1" role="tabpanel">
                             <div class="row">
-                              <div class="col-lg-8 details order-2 order-lg-1">
+                                <div class="col-lg-8 details order-2 order-lg-1">
                                 <h3>Cardiology</h3>
                                 <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
                                 <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
                                 <img src="/img/departments-1.jpg" alt="" class="img-fluid">
-                              </div>
+                                </div>
                             </div>
-                          </div>
-                          <div class="tab-pane" id="departments-tab-2" role="tabpanel">
+                            </div>
+                            <div class="tab-pane" id="departments-tab-2" role="tabpanel">
                             <div class="row">
-                              <div class="col-lg-8 details order-2 order-lg-1">
+                                <div class="col-lg-8 details order-2 order-lg-1">
                                 <h3>Et blanditiis nemo veritatis excepturi</h3>
                                 <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
                                 <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
                                 <img src="/img/gallery/departments-2.jpg" alt="" class="img-fluid">
-                              </div>
+                                </div>
                             </div>
-                          </div>
-                          <div class="tab-pane" id="departments-tab-3" role="tabpanel">
+                            </div>
+                            <div class="tab-pane" id="departments-tab-3" role="tabpanel">
                             <div class="row">
-                              <div class="col-lg-8 details order-2 order-lg-1">
+                                <div class="col-lg-8 details order-2 order-lg-1">
                                 <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
                                 <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
                                 <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
                                 <img src="/img/departments-3.jpg" alt="" class="img-fluid">
-                              </div>
+                                </div>
                             </div>
-                          </div>
-                          <div class="tab-pane" id="departments-tab-4" role="tabpanel">
+                            </div>
+                            <div class="tab-pane" id="departments-tab-4" role="tabpanel">
                             <div class="row">
-                              <div class="col-lg-8 details order-2 order-lg-1">
+                                <div class="col-lg-8 details order-2 order-lg-1">
                                 <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
                                 <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
                                 <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
                                 <img src="/img/departments-4.jpg" alt="" class="img-fluid">
-                              </div>
+                                </div>
                             </div>
-                          </div>
-                          <div class="tab-pane active show" id="departments-tab-5" role="tabpanel">
+                            </div>
+                            <div class="tab-pane active show" id="departments-tab-5" role="tabpanel">
                             <div class="row">
-                              <div class="col-lg-8 details order-2 order-lg-1">
+                                <div class="col-lg-8 details order-2 order-lg-1">
                                 <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
                                 <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
                                 <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
-                              </div>
-                              <div class="col-lg-4 text-center order-1 order-lg-2">
+                                </div>
+                                <div class="col-lg-4 text-center order-1 order-lg-2">
                                 <img src="/img/departments-5.jpg" alt="" class="img-fluid">
-                              </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+
+        <section id="Doctors"  class="doctors"> 
+            <div class="section-title align-items-center">
+                <h2 class="text-center">Doctors</h2>
+                <p class="text-center">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            </div>
+
+            <div class="container mt-5">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6 card">
+                        <div class="team-member d-flex align-items-start">
+                          <div class="pic"><img src="/img/doctors-1.jpg" class="img-fluid" alt=""></div>
+                          <div class="member-info">
+                            <h4>Walter White</h4>
+                            <span>Chief Medical Officer</span>
+                            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                            <div class="social">
+                              <a href=""><i class="bi bi-twitter-x"></i></a>
+                              <a href=""><i class="bi bi-facebook"></i></a>
+                              <a href=""><i class="bi bi-instagram"></i></a>
+                              <a href=""> <i class="bi bi-linkedin"></i> </a>
                             </div>
                           </div>
                         </div>
-                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="team-member d-flex align-items-start">
+                          <div class="pic"><img src="/img/doctors-2.jpg" class="img-fluid" alt=""></div>
+                          <div class="member-info">
+                            <h4>Walter White</h4>
+                            <span>Chief Medical Officer</span>
+                            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                            <div class="social">
+                              <a href=""><i class="bi bi-twitter-x"></i></a>
+                              <a href=""><i class="bi bi-facebook"></i></a>
+                              <a href=""><i class="bi bi-instagram"></i></a>
+                              <a href=""> <i class="bi bi-linkedin"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="team-member d-flex align-items-start">
+                          <div class="pic"><img src="/img/doctors-3.jpg" class="img-fluid" alt=""></div>
+                          <div class="member-info">
+                            <h4>Walter White</h4>
+                            <span>Chief Medical Officer</span>
+                            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                            <div class="social">
+                              <a href=""><i class="bi bi-twitter-x"></i></a>
+                              <a href=""><i class="bi bi-facebook"></i></a>
+                              <a href=""><i class="bi bi-instagram"></i></a>
+                              <a href=""> <i class="bi bi-linkedin"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="team-member d-flex align-items-start">
+                          <div class="pic"><img src="/img/doctors-4.jpg" class="img-fluid" alt=""></div>
+                          <div class="member-info">
+                            <h4>Walter White</h4>
+                            <span>Chief Medical Officer</span>
+                            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                            <div class="social">
+                              <a href=""><i class="bi bi-twitter-x"></i></a>
+                              <a href=""><i class="bi bi-facebook"></i></a>
+                              <a href=""><i class="bi bi-instagram"></i></a>
+                              <a href=""> <i class="bi bi-linkedin"></i> </a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="Faq" class="faq">
+            <div>
+                <div class="section-title align-items-center">
+                    <h2 class="text-center">Frequently Asked Questions</h2>
+                    <p class="text-center">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container row justify-content-center">
+
+                    <div class="col-lg-10">
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  Accordion Item #1
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                              </div>
+                            </div>
+
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  Accordion Item #2
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                              </div>
+                            </div>
+                            
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  Accordion Item #3
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                     
                 </div>
             </div>
 
@@ -524,74 +663,10 @@
 
     
 
-    <div class="Doctors">
-
-        <div>
-            <div></div>
-            <div></div>
-        </div>
-        <div>
-            <div></div>
-            <div></div>
-        </div>
-
-    </div>
+   
+      
+          
     
-    <div class="faq">
-
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-              </div>
-            </div>
-          </div>
-
-    </div>
-
-    <div class="testimonials">
-        <div>
-            <div>Testimonials</div>
-
-            <div>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</div>
-        </div>
-        <div></div>
-    </div>
-
-
-    <div class="gallery">
-
-
-    </div>
-
-    <div class="contact">
-
-    </div>
 
 
     <footer>
