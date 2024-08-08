@@ -572,10 +572,16 @@ doctors .team-member .pic img {
     border: none;
 }
 
-.faq .accordion-flush .accordion-item {
+#Faq{
+    background-color: #f1f7fc;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.faq .accordion-flush .accordion-item{
     background-color: #ffffff;
     position: relative;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 15px;
     border: 1px solid color-mix(in srgb, #1977cc, transparent 75%);
     border-radius: 5px;
@@ -593,16 +599,39 @@ doctors .team-member .pic img {
     align-items: center;
     color: #2c4964;
 }
-.faq .accordion-flush .collapse{
+.faq .accordion-flush  .show{
     background-color: #1977cc;
-    border-color:#1977cc;
+    border: none;
     color: #ffffff;
 }
 
-.faq .accordion-flush .accordion-item .collapse h2{
+
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url(/img/next.png);
+    background-repeat: no-repeat;
+    background-size:1.25rem;
+    transition:transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed){
     background-color: #1977cc;
-    border-color:#1977cc;
+    border: none;
     color: #ffffff;
+
+}
+
+.accordion-item:active{
+    background-color: #1977cc;
+}
+
+#Testimonials{
+    border: 2px solid red;
 }
 
 @media (max-width: 468px) {
