@@ -11,10 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Piedra&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <header>
-        <div  id="navbar" class="header1 container-fluid d-flex justify-content-center justify-content-sm-between align-items-center ps-sm-5 pe-sm-5 " >
+        <div  id="navbar" class="header1 container-fluid d-flex justify-content-center justify-content-sm-between align-items-center ps-sm-5 pe-sm-5 ">
          
             <div class="contact d-flex py-3">
                 <div>
@@ -42,17 +45,26 @@
     
         <div class="header2 container-fluid d-flex  justify-content-between align-items-center ps-sm-5 pe-sm-5">
     
-    
             <div class="logoText"><h1 class="fw-bold">Medilab</h1>
             </div>
     
-            <div class=" border border-2 d-none d-md-block">
-                <!-- <ul class="menuList  ">
-                    <li class=" d-inline">Home</li>
-                    <li class=" d-inline">About</li>
-                    <li class=" d-inline">Services</li>
-                    <li class=" d-inline">Departments</li>
-                    <li class=" d-inline">Doctors</li>
+            <nav class="d-none d-md-block menu">
+                <ul class="menuList">
+                    <li class=" d-inline">
+                        <a href="">Home</a>
+                    </li>
+                    <li class=" d-inline">
+                        <a href="#aboutus"> About</a>
+                    </li>
+                    <li class=" d-inline">
+                        <a href="#Services">Services</a>
+                    </li>
+                    <li class=" d-inline">
+                        <a href="#Department">Departments</a>
+                    </li>
+                    <li class=" d-inline">
+                        <a href="#Doctors">Doctors</a>
+                    </li>
                     <li class=" d-inline"> <div class="dropdown">
                         <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Dropdown link
@@ -65,9 +77,10 @@
                         </ul>
                       </div>
                     </li>
-                    <li class=" d-inline">Contact</li>
-                </ul> -->
-            </div>
+
+                    <li class=" d-inline"><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
 
             <div class=" border border-2  d-sm-block d-none">
                 <a class="btn btn-primary" href="#" role="button">Make an Appointment</a>
@@ -77,6 +90,7 @@
                 <i class="bi bi-list fs-1 fw-bold"></i>
             </div>
         </div>
+
     </header>
 
     <div class="mainBody">
@@ -86,9 +100,11 @@
             <img class="heroImg" src="/img/hero-bg.jpg" alt="medical doctor">
 
             <div class="heroImgTxt p-2 row">
-                <div>
+                <div class="heroImgTxtDiv">
                     <div class="d-block">
-                        <h2 class="wlcTxt">WELCOME TO MEDILAB</h2>
+                        <h2 class="wlcTxt">
+                            WELCOME TO MEDILAB
+                        </h2>
                     </div>
                     <div class="wlcSubtxt">
                         
@@ -175,16 +191,20 @@
                     <img class="img2" src="/img/about.jpg" alt="">
                 </div>
 
-                <div class="col-lg-6 align-items-center">
+                <div class="col-lg-6 align-items-center ">
                     <p class="abtTxt">
                         About Us
                     </p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, saepe, itaque alias laudantium atque, natus rerum quidem ex dolore dolorem voluptatum
-                    <div class="">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Necessitatibus, saepe, itaque alias laudantium atque, natus rerum quidem ex dolore dolorem voluptatum
 
+                    <div class="subDiv my-4">
+                        <div class="d-flex justify-content-center my-4 gap-3">
+                            <div class="icon">
+                                <i class="bi bi-building-check"></i>
+                            </div>
 
-                        <div class="d-flex justify-content-center my-3 gap-3">
-                            <div class="icon"><i class="bi bi-building-check"></i></div>
                             <div class="icontxt">
                                 
                                 <h5>Ullamco laboris nisi ut aliquip consequat</h5>
@@ -193,7 +213,7 @@
                             </div>
                         </div>
 
-                        <div class="d-flex justify-content-center my-3 gap-3">
+                        <div class="d-flex justify-content-center my-4 gap-3">
                             <div class="icon"><i class="bi bi-building-check"></i></div>
                             <div class="icontxt">
                                 
@@ -204,7 +224,7 @@
                         </div>
 
                         
-                        <div class="d-flex justify-content-center my-3 gap-3">
+                        <div class="d-flex justify-content-center my-4 gap-3">
                             <div class="icon"><i class="bi bi-building-check"></i></div>
                             <div class="icontxt">
                                 
@@ -707,29 +727,298 @@
 
         <section id="Testimonials" class="testimonials">
             <div class="container">
-                
+                <div class="section-title align-items-center">
+                    <h2 class="text-center">Testimonials</h2>
+                    <p class="text-center">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                </div>
+
+
+
+
+                <div class="Testimonialcontainer">
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide slide_1">Slide 1</div>
+                          <div class="swiper-slide slide_2">Slide 2</div>
+                          <div class="swiper-slide slide_3">Slide 3</div>
+                          <div class="swiper-slide slide_4">Slide 4</div>
+                          <div class="swiper-slide slide_5">Slide 5</div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    
+                </div>
+
+
             </div>
+
+           
+
+            
+
+        </section>
+
+
+        <section id="Gallery" class="gallery">
+
+            <div class="section-title align-items-center container">
+                <h2 class="text-center">Gallery</h2>
+                <p class="text-center">
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+
+
+            <div class="container-fluid">
+
+                <div class="row g-2">
+
+                    <div class="col-lg-3 col-md-4">
+                      <div class="gallery-item">
+                        <a href="/img/gallery/gallery-1.jpg" class="glightbox">
+                          <img src="/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-3 col-md-4">
+                      <div class="gallery-item">
+                        <a href="/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery">
+                          <img src="/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-3 col-md-4">
+                      <div class="gallery-item">
+                        <a href="/img/gallery/gallery-3.jpg" class="glightbox">
+                          <img src="/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-3 col-md-4">
+                      <div class="gallery-item">
+                        <a href="/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
+                          <img src="/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-3 col-md-4">
+                      <div class="gallery-item">
+                        <a href="/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
+                          <img src="/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-3 col-md-4">
+                      <div class="gallery-item">
+                        <a href="/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
+                          <img src="/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-3 col-md-4">
+                      <div class="gallery-item">
+                        <a href="/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
+                          <img src="/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+          
+                    <div class="col-lg-3 col-md-4">
+                      <div class="gallery-item">
+                        <a href="/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
+                          <img src="/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+                        </a>
+                      </div>
+                    </div>
+          
+                  </div>
+
+            </div>
+
+
+
+        </section>
+
+
+        <section id="Contact"  class="contact">
+
+            <div class="section-title align-items-center container">
+                <h2 class="text-center">Contact</h2>
+                <p class="text-center">
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+            </div>
+
+            <div class="mb-5">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.3200424275055!2d3.93723837300215!3d7.429791711972697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1039ed8ad4acd1ad%3A0xbc651f97fa1024c0!2sAluSoft%20Technologies%20Ltd.!5e0!3m2!1sen!2sng!4v1723287473469!5m2!1sen!2sng" width="100%" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+            <div class="container">
+
+                <div class="row gy-4">
+        
+                  <div class="col-lg-4">
+                    <div class="info-item d-flex">
+                      <i class="bi bi-geo-alt flex-shrink-0"></i>
+                      <div>
+                        <h3>Location</h3>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                      </div>
+                    </div><!-- End Info Item -->
+        
+                    <div class="info-item d-flex">
+                      <i class="bi bi-telephone flex-shrink-0"></i>
+                      <div>
+                        <h3>Call Us</h3>
+                        <p>+1 5589 55488 55</p>
+                      </div>
+                    </div><!-- End Info Item -->
+        
+                    <div class="info-item d-flex aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                      <i class="bi bi-envelope flex-shrink-0"></i>
+                      <div>
+                        <h3>Email Us</h3>
+                        <p>info@example.com</p>
+                      </div>
+                    </div><!-- End Info Item -->
+        
+                  </div>
+        
+                  <div class="col-lg-8">
+                    <form action="forms/contact.php" method="post" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                      <div class="row gy-4">
+        
+                        <div class="col-md-6">
+                          <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                        </div>
+        
+                        <div class="col-md-6 ">
+                          <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                        </div>
+        
+                        <div class="col-md-12">
+                          <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                        </div>
+        
+                        <div class="col-md-12">
+                          <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                        </div>
+        
+                        <div class="col-md-12 text-center">
+        
+                          <button type="submit">Send Message</button>
+                        </div>
+        
+                      </div>
+                    </form>
+                  </div>
+        
+                </div>
+        
+              </div>
 
         </section>
     </div>
 
 
+    <footer id="footer" class="footer light-background">
 
+        <div class="container footer-top">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">Medilab</span>
+              </a>
+              <div class="footer-contact pt-3">
+                <p>A108 Adam Street</p>
+                <p>New York, NY 535022</p>
+                <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+                <p><strong>Email:</strong> <span>info@example.com</span></p>
+              </div>
+              <div class="social-links d-flex mt-4">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+    
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+    
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Product Management</a></li>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Graphic Design</a></li>
+              </ul>
+            </div>
+    
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Hic solutasetp</h4>
+              <ul>
+                <li><a href="#">Molestiae accusamus iure</a></li>
+                <li><a href="#">Excepturi dignissimos</a></li>
+                <li><a href="#">Suscipit distinctio</a></li>
+                <li><a href="#">Dilecta</a></li>
+                <li><a href="#">Sit quas consectetur</a></li>
+              </ul>
+            </div>
+    
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Nobis illum</h4>
+              <ul>
+                <li><a href="#">Ipsam</a></li>
+                <li><a href="#">Laudantium dolorum</a></li>
+                <li><a href="#">Dinera</a></li>
+                <li><a href="#">Trodelas</a></li>
+                <li><a href="#">Flexo</a></li>
+              </ul>
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="container copyright text-center mt-4">
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">Medilab</strong> <span>All Rights Reserved</span></p>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+    
+      </footer>
+
+      <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
     
 
-   
-      
-          
-    
-
-
-    <footer>
-
-    </footer>
-    
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

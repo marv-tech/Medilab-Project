@@ -6,24 +6,93 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
-.header1{
+header{
+    color:#444444;
+    transition: all 0.5s;
+    z-index: 997;
+    background-color: #ffffff;
+}
+
+#navbar{
+    position: relative;
+    top: 0; 
+    height: 40px;
+    padding: 0;
+    font-size: 14px;
+    transition: all 0.5s;
     color: white;
     background-color: #1977cc;
-    position: relative; 
-    top: 0; 
     width: 100%; 
-    transition: top 0.3s; 
-    
+    transition: top 0.3s;   
 }
 
+/* .navbar.hide {
+    transform: translateY(-100%);
+} */
+
+/* Show the navbar when scrolling up */
+/* .navbar.show {
+    transform: translateY(0);
+} */
+
 .header2{
-    background-color: #ffffff;
     position: relative;
+    min-height: 60px;
+    padding: 10px 0;
+    background-color: #ffffff;
     width: 100%;
     z-index: 7;
 }
+
+.menu{
+    padding: 0;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.menu>ul>li {
+    white-space: nowrap;
+    padding: 15px 14px;
+}
+
+.menu a, .menu a:focus {
+    color: #2c4964;
+    font-size: 15px;
+    padding: 0 2px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+    position: relative;
+}
+
+.menu .active, .menu .active:focus {
+    color: #1977cc;
+}
+
+.menu>ul>li>a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #1977cc;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
 
 .headerList li{
     text-decoration: none;
@@ -46,7 +115,7 @@
 
 .mainBody{
     display: block;
-    max-height: 100vh;
+    height: 100vh;
     overflow-y: scroll !important;
 }
 
@@ -74,6 +143,7 @@
     z-index: 3;
 }
 
+
 .wlcTxt{
     margin: 0;
     font-size: 48px;
@@ -98,6 +168,13 @@
     padding-top: 0;
     margin-top: 0;
 }
+
+.subDiv{
+    pa
+}
+
+
+
 .card1{
     background-color: #1977cc;
     color:white;
@@ -119,6 +196,7 @@
     margin-inline-end: 0px; 
     margin-bottom: 30px;
 }
+
 .btnDiv{
     text-align: center;
 }
@@ -166,8 +244,7 @@ p{
     width: 100%;
     min-height: calc(100vh - 10px);
     margin-top: 60px;
-    margin-bottom: 40px;
-    /* position: relative; */ 
+    margin-bottom: 10px; 
 }
 
 .aboutUs{
@@ -183,8 +260,7 @@ p{
 
 .section-title h2{
     position: relative;
-    padding-bottom: 20px;
-    
+    padding-bottom: 20px; 
 }
 
 .section-title h2::before {
@@ -281,8 +357,8 @@ a {
     color: #2c4964;
 }
 
-h5{
-    font-size: 18px;
+.icontxt h5{
+    font-size: 23px;
     font-weight: 700;
     color: #2c4964;
     margin-top: 0;
@@ -293,8 +369,7 @@ h5{
 #numbers{
     background-color: #eff5fa;
     padding-top: 60px;
-    padding-bottom: 60px;
-    min-height: calc(100vh - 120px);
+    padding-bottom: 40px;
 }
 
 .numSubDiv{
@@ -634,6 +709,91 @@ doctors .team-member .pic img {
     border: 2px solid red;
 }
 
+
+.Testimonialcontainer {
+padding-top: 10vh;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 1rem;
+}
+
+.Testimonialcontainer>div {
+height: 80vh;
+}
+
+/* Swiper container stylng */
+.swiper {
+right: 1rem;
+width: 100%;
+height: 100%;
+}
+
+.swiper-slide {
+text-align: center;
+/* Center slide text vertically */
+display: flex !important;
+align-items: center;
+justify-content: center;
+}
+  
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.slide_1 {
+background-color: #643ca3;
+}
+
+.slide_2 {
+background-color: #e38364;
+}
+
+.slide_3 {
+background-color: #faf47a;
+}
+  
+.slide_4 {
+background-color: #64e3c1;
+}
+
+.slide_5 {
+background-color: #9e6ffd;
+}
+
+#Gallery, #Contact{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.contact .info-item i {
+    color: #ffffff;
+    background: #1977cc;
+    font-size: 20px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+.footer {
+    display: block;
+    color:#444444;
+    background-color:#f1f7fc;
+    border-top: 1px solid color-mix(in srgb, #1977cc, transparent 75%);
+    font-size: 14px;
+    height: 50%;
+    position: relative;
+    display: none;
+}
+
 @media (max-width: 468px) {
     .doctors .team-member {
         flex-direction: column;
@@ -652,6 +812,12 @@ doctors .team-member .pic img {
 }
 
 @media (min-width: 720px) {
+    .heroImgTxtDiv{
+        padding-right: 60px;
+        padding-left: 40px;
+        padding-bottom: 30px;
+    }
+
     #numbers{
         background-color: #eff5fa;
         padding-top: 60px;
@@ -666,16 +832,12 @@ doctors .team-member .pic img {
 
     #aboutus{
         width: 100%;
-        /* min-height: calc(100vh - 10px); */
-        /* height: 100vh; */
         margin-top: 60px;
-        margin-bottom: 40px;
-        /* position: relative; */ 
     }
 
     #appointment{
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 20px;
         /* height: 100vh; */
         padding-right: 60px;
         padding-left: 60px; 
@@ -685,6 +847,14 @@ doctors .team-member .pic img {
         padding-top: 60px;
         padding-bottom: 60px;
         height: 100vh;
+        padding-right: 60px;
+        padding-left: 60px; 
+    }
+
+    #Gallery{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        /* height: 100vh; */
         padding-right: 60px;
         padding-left: 60px; 
     }

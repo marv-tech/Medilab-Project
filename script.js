@@ -1,33 +1,19 @@
-const navbar = document.getElementById("navbar");
+// let lastScrollTop = 0;
 
-            let lastScrollTop = 0;
-            addEventListener("scroll", () => {
-                // Current scroll position
-                const scrollTop =
-                    window.scrollY || document.documentElement.scrollTop;
+// const navbar = document.getElementById('navbar');
 
-                // check scroll direction
-                const distance = scrollTop - lastScrollTop;
-                const currentTop = parseInt(
-                    getComputedStyle(navbar).top.split("px")
-                );
+// window.addEventListener('scroll', function() {
+//     const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-                // Clamp value between -80 and 0
-                let amount = Math.max(
-                    Math.min(
-                        currentTop +
-                            (distance < 0
-                                ? Math.abs(distance) // scrolling up
-                                : -Math.abs(distance)// scrolling down
-                                ) * 40, // (1)
-                        0
-                    ),
-                    -80
-                );
+//     if (scrollTop > lastScrollTop) {
+//         // Scrolling down
+//         navbar.classList.add('hide');
+//         navbar.classList.remove('show');
+//     } else {
+//         // Scrolling up
+//         navbar.classList.remove('hide');
+//         navbar.classList.add('show');
+//     }
 
-                console.log(amount, currentTop, Math.abs(distance));
-
-                navbar.style.top = `${amount}px`;
-
-                lastScrollTop = scrollTop;
-            });
+//     lastScrollTop = scrollTop;
+// });
