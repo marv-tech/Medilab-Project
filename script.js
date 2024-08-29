@@ -1,19 +1,15 @@
-// let lastScrollTop = 0;
+// //  var lastScrollTop;
+// navbar = document.querySelector('index-page');
 
-// const navbar = document.getElementById('navbar');
+// index= document.querySelector("index-page")
 
-// window.addEventListener('scroll', function() {
-//     const scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-//     if (scrollTop > lastScrollTop) {
-//         // Scrolling down
-//         navbar.classList.add('hide');
-//         navbar.classList.remove('show');
-//     } else {
-//         // Scrolling up
-//         navbar.classList.remove('hide');
-//         navbar.classList.add('show');
-//     }
-
-//     lastScrollTop = scrollTop;
+// window.addEventListener('scroll',function(){
+// var scrollTop = window.scrollY || document.documentElement.scrollTop;
+// if(scrollTop > lastScrollTop){
+//     index.classList.add("scrolled");
+// }
+// else{
+//     index.classList.remove("scrolled");
+// }
+// lastScrollTop = scrollTop;
 // });

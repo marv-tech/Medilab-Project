@@ -15,84 +15,101 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 </head>
-<body>
-    <header>
-        <div  id="navbar" class="header1 container-fluid d-flex justify-content-center justify-content-sm-between align-items-center ps-sm-5 pe-sm-5 ">
-         
-            <div class="contact d-flex py-3">
-                <div>
-                    <span class="pe-2" >
-                        <i class="bi bi-envelope pe-1"></i><a class=" emailLink text-light " href="">contact@example.com</a>
-                    </span>
+
+<body class="index-page">
+    <header class="header">
+        <!-- Top bar with contact info and social links -->
+        <div class="topbar d-flex align-items-center px-sm-5">
+            <div class="contact container d-flex justify-content-center justify-content-md-between py-3">
+                <div class="contact-info">
+                    <i class="bi bi-envelope pe-2">
+                        <a class="emailLink text-light" href="mailto:contact@example.com">contact@example.com</a>
+                    </i>
+                    <i class="bi bi-phone ps-2">+1 5589 55488 55</i>
                 </div>
-                <div>
-                    <span class="ps-2"><i class="bi bi-phone "></i> +1 5589 55488 55
-                    </span>
-                </div>
-            
             </div>
-           
     
             <div class="socials py-3 d-none d-sm-inline-block">
-    
-                <div class=" d-inline px-2" ><i class="bi bi-twitter-x"></i></div>
-                <div class="d-inline px-2"><i class="bi bi-facebook"></i></div>
-                <div class=" d-inline px-2"> <i class="bi bi-instagram"></i></div>
-                <div class=" d-inline px-2"><i class="bi bi-linkedin"></i></div>
+                <a href="#" class="social-icon px-1"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="social-icon px-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-icon px-2"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-icon px-2"><i class="bi bi-linkedin"></i></a>
             </div>
-    
         </div>
     
-        <div class="header2 container-fluid d-flex  justify-content-between align-items-center ps-sm-5 pe-sm-5">
-    
-            <div class="logoText"><h1 class="fw-bold">Medilab</h1>
+        <!-- Header section with logo and navigation -->
+        <div class="header2 container-fluid d-flex justify-content-between align-items-center px-sm-5">
+            <div class="logoText">
+                <h1 class="fw-bold">Medilab</h1>
             </div>
     
+            <!-- Desktop Navigation -->
             <nav class="d-none d-md-block menu">
-                <ul class="menuList">
-                    <li class=" d-inline">
-                        <a href="">Home</a>
+                <ul class="menuList d-flex list-unstyled">
+                    <li>
+                        <a href="#">Home</a>
                     </li>
-                    <li class=" d-inline">
-                        <a href="#aboutus"> About</a>
+                    <li>
+                        <a href="#aboutus">About</a>
                     </li>
-                    <li class=" d-inline">
+                    <li>
                         <a href="#Services">Services</a>
                     </li>
-                    <li class=" d-inline">
+                    <li>
                         <a href="#Department">Departments</a>
                     </li>
-                    <li class=" d-inline">
+                    <li>
                         <a href="#Doctors">Doctors</a>
                     </li>
-                    <li class=" d-inline"> <div class="dropdown">
-                        <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown link
-                        </a>
-                      
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown link</a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                      </div>
                     </li>
 
-                    <li class=" d-inline"><a href="#Contact">Contact</a></li>
+                   
+                    <li>
+                        <a href="#Contact">Contact</a>
+                    </li>
                 </ul>
             </nav>
-
-            <div class=" border border-2  d-sm-block d-none">
-                <a class="btn btn-primary" href="#" role="button">Make an Appointment</a>
+    
+            <!-- Appointment Button -->
+            <div class="d-none d-sm-block">
+                <a id="headerButton" class="btn btn-primary" href="#" role="button">Make an Appointment</a>
             </div>
-
-            <div class=" d-block d-md-none p-2">
+    
+            <!-- Mobile Menu Toggle and Off-Screen Menu -->
+            <div class="d-block d-md-none p-2">
                 <i class="bi bi-list fs-1 fw-bold"></i>
+                <div class="off-screen-menu">
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#aboutus">About</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Department">Departments</a></li>
+                        <li><a href="#Doctors">Doctors</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown link</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <nav>
+                    <span></span><span></span><span></span>
+                </nav>
             </div>
         </div>
-
     </header>
-
+    
     <div class="mainBody">
 
         <section id="hero" class="px-4">
@@ -184,11 +201,10 @@
         <section id="aboutus">
             <div class="aboutUs d-lg-flex justify-content-lg-around gap-3">
 
-                <div class="col-lg-5   pb-3">
+                <div class="col-lg-5 pb-3 position-relative about">
+                    <img class="img2 img-fluid" src="/img/about.jpg" alt="">
 
-                    <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox "></a> -->
-
-                    <img class="img2" src="/img/about.jpg" alt="">
+                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox pulsating-play-btn"></a>
                 </div>
 
                 <div class="col-lg-6 align-items-center ">
@@ -560,7 +576,7 @@
                             <span>Chief Medical Officer</span>
                             <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
                             <div class="social">
-                              <a href=""><i class="bi bi-twitter-x"></i></a>
+                              <a href=""><i class="bi bi-twitter-x px-2"></i></a>
                               <a href=""><i class="bi bi-facebook"></i></a>
                               <a href=""><i class="bi bi-instagram"></i></a>
                               <a href=""> <i class="bi bi-linkedin"></i> </a>
@@ -726,36 +742,49 @@
         </section>
 
         <section id="Testimonials" class="testimonials">
-            <div class="container">
-                <div class="section-title align-items-center">
+           <div class="row align-items-center">
+            <div class="container d-md-flex">
+                <div class="section-title align-items-center col-lg-5">
                     <h2 class="text-center">Testimonials</h2>
+
                     <p class="text-center">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
                 </div>
 
 
+                <div class="Testimonialcontainer col-lg-7">
 
+                    
 
-                <div class="Testimonialcontainer">
-
-                    <div class="swiper mySwiper">
+                    <!-- Swiper -->
+                    <!-- <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide slide_1">Slide 1</div>
-                          <div class="swiper-slide slide_2">Slide 2</div>
-                          <div class="swiper-slide slide_3">Slide 3</div>
-                          <div class="swiper-slide slide_4">Slide 4</div>
-                          <div class="swiper-slide slide_5">Slide 5</div>
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
                         </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
                         <div class="swiper-pagination"></div>
-                      </div>
+                        <div class="autoplay-progress">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span></span>
+                        </div>
+                    </div> -->
                     
                 </div>
 
 
             </div>
 
-           
-
-            
+           </div>
 
         </section>
 
@@ -927,98 +956,129 @@
               </div>
 
         </section>
+
+
+        <footer id="Footer" class="footer light-background">
+
+            <div class="container footer-top">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                  <a href="index.html" class="logo d-flex align-items-center">
+                    <span class="sitename">Medilab</span>
+                  </a>
+                  <div class="footer-contact pt-3">
+                    <p>A108 Adam Street</p>
+                    <p>New York, NY 535022</p>
+                    <p class="mt-3">
+                        <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+                    </p>
+                    <p>
+                        <strong>Email:</strong> <span>info@example.com</span>
+                    </p>
+                  </div>
+                  <div class="social-links d-flex mt-4">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+        
+                <div class="col-lg-2 col-md-3 footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                  </ul>
+                </div>
+        
+                <div class="col-lg-2 col-md-3 footer-links">
+                  <h4>Our Services</h4>
+                  <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Product Management</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                  </ul>
+                </div>
+        
+                <div class="col-lg-2 col-md-3 footer-links">
+                  <h4>Hic solutasetp</h4>
+                  <ul>
+                    <li><a href="#">Molestiae accusamus iure</a></li>
+                    <li><a href="#">Excepturi dignissimos</a></li>
+                    <li><a href="#">Suscipit distinctio</a></li>
+                    <li><a href="#">Dilecta</a></li>
+                    <li><a href="#">Sit quas consectetur</a></li>
+                  </ul>
+                </div>
+        
+                <div class="col-lg-2 col-md-3 footer-links">
+                  <h4>Nobis illum</h4>
+                  <ul>
+                    <li><a href="#">Ipsam</a></li>
+                    <li><a href="#">Laudantium dolorum</a></li>
+                    <li><a href="#">Dinera</a></li>
+                    <li><a href="#">Trodelas</a></li>
+                    <li><a href="#">Flexo</a></li>
+                  </ul>
+                </div>
+        
+              </div>
+            </div>
+        
+            <div class="container copyright text-center mt-4">
+              <p>© <span>Copyright</span> <strong class="px-1 sitename">Medilab</strong> <span>All Rights Reserved</span></p>
+
+            </div>
+        </footer>
     </div>
 
 
-    <footer id="footer" class="footer light-background">
+    
 
-        <div class="container footer-top">
-          <div class="row gy-4">
-            <div class="col-lg-4 col-md-6 footer-about">
-              <a href="index.html" class="logo d-flex align-items-center">
-                <span class="sitename">Medilab</span>
-              </a>
-              <div class="footer-contact pt-3">
-                <p>A108 Adam Street</p>
-                <p>New York, NY 535022</p>
-                <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                <p><strong>Email:</strong> <span>info@example.com</span></p>
-              </div>
-              <div class="social-links d-flex mt-4">
-                <a href=""><i class="bi bi-twitter-x"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
     
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Terms of service</a></li>
-                <li><a href="#">Privacy policy</a></li>
-              </ul>
-            </div>
-    
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Web Development</a></li>
-                <li><a href="#">Product Management</a></li>
-                <li><a href="#">Marketing</a></li>
-                <li><a href="#">Graphic Design</a></li>
-              </ul>
-            </div>
-    
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Hic solutasetp</h4>
-              <ul>
-                <li><a href="#">Molestiae accusamus iure</a></li>
-                <li><a href="#">Excepturi dignissimos</a></li>
-                <li><a href="#">Suscipit distinctio</a></li>
-                <li><a href="#">Dilecta</a></li>
-                <li><a href="#">Sit quas consectetur</a></li>
-              </ul>
-            </div>
-    
-            <div class="col-lg-2 col-md-3 footer-links">
-              <h4>Nobis illum</h4>
-              <ul>
-                <li><a href="#">Ipsam</a></li>
-                <li><a href="#">Laudantium dolorum</a></li>
-                <li><a href="#">Dinera</a></li>
-                <li><a href="#">Trodelas</a></li>
-                <li><a href="#">Flexo</a></li>
-              </ul>
-            </div>
-    
-          </div>
-        </div>
-    
-        <div class="container copyright text-center mt-4">
-          <p>© <span>Copyright</span> <strong class="px-1 sitename">Medilab</strong> <span>All Rights Reserved</span></p>
-          <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you've purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
-        </div>
-    
-      </footer>
 
-      <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
-    
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
     </script>
+
+    <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+          },
+          on: {
+            autoplayTimeLeft(s, time, progress) {
+              progressCircle.style.setProperty("--progress", 1 - progress);
+              progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+            }
+          }
+        });
+    </script>
+
+    </html>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="/script.js"></script>
+    <script src="/script.js">
+    </script>
 </body>
 </html>
